@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Kindle Assist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="https://note.com/cute_echium873" target="_blank">
+    <img src="img/help.png" alt="ヘルプ" style="position: absolute; top: 0; right: 0; width: 30px; height: 30px;">
+  </a>
+  <a href="https://twitter.com/subjobl_kasiri" target="_blank">
+    <img src="img/twitter.png" alt="Twitter" style="position: absolute; top: 0; right: 40px; width: 30px; height: 30px;">
+  </a>
+  
+  <h1>Kindle Assist</h1>
+  
+  <div>
+    <label for="input1" class="label">本のタイトル</label>
+    <textarea id="input1" rows="4" placeholder="テキストを入力してください"></textarea>
+    <div>
+      <label for="kanaOutput1" class="label">タイトルのフリガナ</label>
+      <textarea id="kanaOutput1" rows="4" placeholder="カナ変換結果がここに表示されます" class="gray-background"></textarea>
+    </div>
+    <div>
+      <label for="romajiOutput1" class="label">ローマ字</label>
+      <textarea id="romajiOutput1" rows="4" placeholder="ローマ字変換結果がここに表示されます" class="gray-background"></textarea>
+    </div>
+  </div>
+  
+  <div>
+    <label for="input2" class="label">サブタイトル</label>
+    <textarea id="input2" rows="4" placeholder="テキストを入力してください"></textarea>
+    <div>
+      <label for="kanaOutput2" class="label">サブタイトルのフリガナ</label>
+      <textarea id="kanaOutput2" rows="4" placeholder="カナ変換結果がここに表示されます" class="gray-background"></textarea>
+    </div>
+    <div>
+      <label for="romajiOutput2" class="label">サブタイトルのローマ字</label>
+      <textarea id="romajiOutput2" rows="4" placeholder="ローマ字変換結果がここに表示されます" class="gray-background"></textarea>
+    </div>
+  </div>
+  
+  <div>
+    <label for="input3" class="label">レーベル</label>
+    <textarea id="input3" rows="4" placeholder="テキストを入力してください"></textarea>
+    <div>
+      <label for="kanaOutput3" class="label">レーベルのフリガナ (カタカナ)</label>
+      <textarea id="kanaOutput3" rows="4" placeholder="カナ変換結果がここに表示されます" class="gray-background"></textarea>
+    </div>
+    <div>
+      <label for="romajiOutput3" class="label">レーベル (ローマ字)</label>
+      <textarea id="romajiOutput3" rows="4" placeholder="ローマ字変換結果がここに表示されます" class="gray-background"></textarea>
+    </div>
+  </div>
+  
+  <button id="convertButton">変換</button>
+  <button id="additionalButton">追加ボタン</button>
+  
+  <script src="WanaKana.js"></script>
+  <script src="script.js"></script>
+  <script src="input.js"></script>
+</body>
+</html>

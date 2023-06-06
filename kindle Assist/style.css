@@ -1,0 +1,47 @@
+body {
+  background: linear-gradient(to bottom, #4a90e2, #006699);
+  padding: 10px;
+  height: 300px; /* 適宜調整してください */
+  overflow: hidden;
+}
+
+.container {
+  width: 400px;
+  margin: 3px auto;
+
+}
+
+textarea {
+  width: 300px;
+  height: 20px;
+  resize: none;
+  margin-bottom: 3px;
+  font-size: 12px;
+}
+
+textarea.gray-background {
+  background-color: #dddddd;
+}
+
+button {
+  padding: 10px;
+}
+
+#output-text {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 12px;
+}
+
+.label textarea {
+  margin-bottom: 0;
+}
+
+#additionalButton {
+  float: right;
+}

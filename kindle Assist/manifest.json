@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Kindle Assist",
+  "version": "1.0",
+  "description": "Kindle Assist",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["WanaKana.js", "input.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "popup.html",
+    "style.css",
+    "input.js",
+    "icon.png",
+    "WanaKana.js",
+    "img/help.png",
+    "img/twitter.png"
+  ]
+}
